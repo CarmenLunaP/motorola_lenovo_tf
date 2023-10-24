@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "./login.css";
+import logo_Motorola from "../../assets/logo_Motorola.png";
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -26,6 +28,11 @@ function Login() {
 
   return (
     <div>
+    <div>
+      <img src= {logo_Motorola}></img>
+          </div>
+        
+     
       <h2>Iniciar sesión</h2>
       <form onSubmit={handleSubmit}>
         <div>
