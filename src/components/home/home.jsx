@@ -10,7 +10,7 @@ function printCards(data) {
   // ordenado por inventario de menor a mayor
   sortedData.sort((a, b) => b.Inventario - a.Inventario);
 
-  return sortedData.map((item, index) => ( // tomar cada elemento para crear la tarjeta según el index
+  return sortedData.map ((item, index) => ( // tomar cada elemento para crear la tarjeta según el index
     <div key={index} className="card">
       <div>
       <h2>{item.modelo_comercial}</h2>
