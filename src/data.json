@@ -1216,5 +1216,12 @@
         "battery_charging": "15W",
         "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
       }
+    ],
+    "users": [
+      {
+        "password": "123456",
+        "idtrabajador": "123456",
+        "id": 1
+      }
     ]
   }
