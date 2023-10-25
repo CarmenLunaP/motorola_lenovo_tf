@@ -17,7 +17,7 @@
         "Velocidad_Max_GHz": 1.4,
         "battery_capacity": 2120,
         "battery_charging": "5W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -36,7 +36,7 @@
         "Velocidad_Max_GHz": 1.4,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -55,7 +55,7 @@
         "Velocidad_Max_GHz": 1.4,
         "battery_capacity": 4000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -74,7 +74,7 @@
         "Velocidad_Max_GHz": 1.4,
         "battery_capacity": 4000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -93,7 +93,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 3000,
         "battery_charging": "5W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -112,7 +112,7 @@
         "Velocidad_Max_GHz": 1.5,
         "battery_capacity": 3000,
         "battery_charging": "5W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -131,7 +131,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 3000,
         "battery_charging": "5W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -150,7 +150,7 @@
         "Velocidad_Max_GHz": 1.6,
         "battery_capacity": 3000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -169,7 +169,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -188,7 +188,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 4000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -207,7 +207,7 @@
         "Velocidad_Max_GHz": 1.6,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -226,7 +226,7 @@
         "Velocidad_Max_GHz": 1.6,
         "battery_capacity": 4000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -245,7 +245,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto E",
@@ -264,7 +264,7 @@
         "Velocidad_Max_GHz": 1.6,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Edge",
@@ -283,7 +283,7 @@
         "Velocidad_Max_GHz": 2.84,
         "battery_capacity": 5000,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Edge",
@@ -302,7 +302,7 @@
         "Velocidad_Max_GHz": 2.4,
         "battery_capacity": 4500,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Edge",
@@ -321,7 +321,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "30W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Edge",
@@ -340,7 +340,7 @@
         "Velocidad_Max_GHz": 2.4,
         "battery_capacity": 4000,
         "battery_charging": "30W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Edge",
@@ -359,7 +359,7 @@
         "Velocidad_Max_GHz": 3.2,
         "battery_capacity": 4500,
         "battery_charging": "30W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Edge",
@@ -378,7 +378,7 @@
         "Velocidad_Max_GHz": 3,
         "battery_capacity": 5000,
         "battery_charging": "68W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Edge",
@@ -397,7 +397,7 @@
         "Velocidad_Max_GHz": 2.5,
         "battery_capacity": 4000,
         "battery_charging": "33W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -416,7 +416,7 @@
         "Velocidad_Max_GHz": 1.4,
         "battery_capacity": 2470,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -435,7 +435,7 @@
         "Velocidad_Max_GHz": 1.4,
         "battery_capacity": 4000,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -454,7 +454,7 @@
         "Velocidad_Max_GHz": 1.4,
         "battery_capacity": 4000,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -473,7 +473,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 3000,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -492,7 +492,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 3200,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -511,7 +511,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 3200,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -530,7 +530,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 3000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -549,7 +549,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 5000,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -568,7 +568,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 3000,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -587,7 +587,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 3000,
         "battery_charging": "27W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -606,7 +606,7 @@
         "Velocidad_Max_GHz": 2.1,
         "battery_capacity": 4000,
         "battery_charging": "5W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -625,7 +625,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 4000,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -644,7 +644,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -663,7 +663,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 4000,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -682,7 +682,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 4000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -701,7 +701,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -720,7 +720,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -739,7 +739,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -758,7 +758,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 5000,
         "battery_charging": "30W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -777,7 +777,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 6000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -796,7 +796,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -815,7 +815,7 @@
         "Velocidad_Max_GHz": 3.2,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -834,7 +834,7 @@
         "Velocidad_Max_GHz": 1.8,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -853,7 +853,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -872,7 +872,7 @@
         "Velocidad_Max_GHz": 2.05,
         "battery_capacity": 5000,
         "battery_charging": "50W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -891,7 +891,7 @@
         "Velocidad_Max_GHz": 2.3,
         "battery_capacity": 6000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -910,7 +910,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -929,7 +929,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "33W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -948,7 +948,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 5000,
         "battery_charging": "33W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -967,7 +967,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -986,7 +986,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -1005,7 +1005,7 @@
         "Velocidad_Max_GHz": 2.99,
         "battery_capacity": 5000,
         "battery_charging": "33W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -1024,7 +1024,7 @@
         "Velocidad_Max_GHz": 2.4,
         "battery_capacity": 5000,
         "battery_charging": "33W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -1043,7 +1043,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -1062,7 +1062,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 5000,
         "battery_charging": "33W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto G",
@@ -1081,7 +1081,7 @@
         "Velocidad_Max_GHz": 2.3,
         "battery_capacity": 5000,
         "battery_charging": "20W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto One",
@@ -1100,7 +1100,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 3500,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto One",
@@ -1119,7 +1119,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 4000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto One",
@@ -1138,7 +1138,7 @@
         "Velocidad_Max_GHz": 2,
         "battery_capacity": 4000,
         "battery_charging": "27W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto One",
@@ -1157,7 +1157,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 5000,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto One",
@@ -1176,7 +1176,7 @@
         "Velocidad_Max_GHz": 2.3,
         "battery_capacity": 5000,
         "battery_charging": "10W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Razr",
@@ -1195,7 +1195,7 @@
         "Velocidad_Max_GHz": 2.2,
         "battery_capacity": 2510,
         "battery_charging": "18W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       },
       {
         "familia": "Moto Razr",
@@ -1214,7 +1214,7 @@
         "Velocidad_Max_GHz": 2.4,
         "battery_capacity": 2800,
         "battery_charging": "15W",
-        "img": "https://i.postimg.cc/bvhFqY8H/moto-e20.png"
+        "img": "moto_e20.png"
       }
     ],
     "users": [
