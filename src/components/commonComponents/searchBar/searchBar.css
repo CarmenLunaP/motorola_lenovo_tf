@@ -9,6 +9,7 @@
   width: 1223px;
   height: 72px;
   border-radius: 10px;
+  position: relative; /* Añadido para controlar la posición de la lista desplegable */
 }
 
 .search-container {
@@ -17,13 +18,14 @@
 
 .search-bar input {
   background: #dee1e7;
-  padding: 8px 8px 8px 16px;
+  padding: 8px 8px 8px 26px;
   width: 552px;
   height: 40px;
   font-size: 16px;
   border-radius: 16px;
   border: 1px solid var(--Text, #111);
-  animation: borderBlink 1.5s infinite; 
+  animation: borderBlink 1.5s infinite;
+  position: relative; /* Añadido para controlar la posición de la lista desplegable */
 }
 
 @keyframes borderBlink {
@@ -56,4 +58,35 @@
 .logo-search-bar img {
   width: 190px;
   height: 63.796px;
+}
+
+
+/* lista desplegable*/
+
+.lista-desplegable {
+  background-color: #DEE1E7;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 575px; 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  margin-top: 15px;
+  margin-left: 48px;
+}
+
+.lista-desplegable ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+.lista-desplegable ul li {
+  padding: 8px 22px;
+  transition: background-color 0.3s; 
+}
+
+.lista-desplegable ul li:hover {
+  background-color: #928D8D; 
 }
