@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    border: 1px solid red;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.model {
+    width: 100px;
+    height: 100px;
+}
