@@ -9,9 +9,9 @@
 }
 
 .card {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
     display: flex;
-    justify-content: flex-end;
     justify-content: space-between;
     background: #DEE1E7;
     border-radius: 10px;
@@ -29,7 +29,9 @@
 .model {
     border: 2px solid#928D8D;
     border-radius: 10px;
-    
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 150px;
 }
 
