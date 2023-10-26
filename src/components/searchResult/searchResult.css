@@ -1,0 +1,36 @@
+/* searchResult.css */
+.search-result-all {
+    display: flex;
+  
+   
+    padding: 20px;
+  }
+  
+  .model-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .model-info {
+    background-color: #DEE1E7;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .recommended-models {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .model-card {
+    background-color: #DEE1E7;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+  

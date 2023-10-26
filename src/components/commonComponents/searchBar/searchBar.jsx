@@ -19,7 +19,7 @@ function SearchBar() {
     setSearchQuery(query);
     setSelectedModel(null);
 
-    if (query.length >= 4) {
+    
       const matchingResults = data.models.filter(model => {
         const modeloComercial = model.modelo_comercial.toLowerCase();
         const modeloTecnico = model.modelo_tecnico.toLowerCase();
