@@ -4,30 +4,31 @@
   border-radius: 10px;
   background: var(--Cards, #DEE1E7);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 8px 24px;
+  padding: 15px 24px;
   border-radius: 4px;
-  width: 1223px;
-  height: 72px;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100; */
-  position: relative; /* Posición relativa para el contenedor principal */
+  width: 70%;
+  height: 6%;
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  z-index: 100;
+  /*position: relative; /* Posición relativa para el contenedor principal */
 }
 .search-container {
   width: 100%;
-
 }
+
 .search-bar input {
   background: #DEE1E7;
-  padding: 8px 8px 8px 26px;
-  width: 552px;
-  height: 40px;
+  padding: 15px 15px 15px 26px;
+  width: 90%;
+  height: 90%;
   font-size: 16px;
   border-radius: 16px;
   border: 1px solid var(--Text, #111);
   animation: borderBlink 1.5s infinite;
 }
+
 @keyframes borderBlink {
   0%, 100% {
     border-color: #111;
@@ -45,7 +46,7 @@
   font-size: 20px;
   border-radius: 5px;
   position: absolute; /* Posición absoluta para el botón de búsqueda */
-  right: 54%;
+  right: 48%;
   top: 50%; /* Centra verticalmente */
   transform: translateY(-50%); /* Centra verticalmente */
   z-index: 1; /* Para asegurarse de que esté sobre el input */
@@ -54,8 +55,9 @@
   color: white;
 }
 .logo-search-bar img {
-  width: 190px;
-  height: 63.796px;
+  width: 40%;
+  /* height: 100%; */
+  margin-left: 56%;
 }
 /* lista desplegable */
 .lista-desplegable {
