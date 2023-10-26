@@ -16,7 +16,7 @@ function Upgrate() {
 
   return (
     <div>
-      <h2>Detalles del Producto prueba</h2>
+      <h2>Detalles del Producto</h2>
       <table>
         <tbody>
           <tr>
