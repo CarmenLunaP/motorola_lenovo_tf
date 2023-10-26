@@ -37,7 +37,7 @@ function SearchBar() {
 
   const handleModelSelection = (model) => {
     setSelectedModel(model);
-
+    setResults([])
     // voy la página de productos
     navigate('/searchResult', { state: { selectedModel: model } });
   };
