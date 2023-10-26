@@ -2,22 +2,23 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  background: var(--Cards, #dee1e7);
+  background: var(--Cards, #DEE1E7);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 8px 24px 8px 45px;
+  padding: 8px 24px;
   border-radius: 4px;
   width: 1223px;
   height: 72px;
-  border-radius: 10px;
-  position: relative; /* Añadido para controlar la posición de la lista desplegable */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; */
+  position: relative; /* Posición relativa para el contenedor principal */
 }
-
 .search-container {
   width: 100%;
 }
-
 .search-bar input {
-  background: #dee1e7;
+  background: #DEE1E7;
   padding: 8px 8px 8px 26px;
   width: 552px;
   height: 40px;
@@ -25,68 +26,57 @@
   border-radius: 16px;
   border: 1px solid var(--Text, #111);
   animation: borderBlink 1.5s infinite;
-  position: relative; /* Añadido para controlar la posición de la lista desplegable */
 }
-
 @keyframes borderBlink {
   0%, 100% {
     border-color: #111;
   }
   50% {
-    border-color:rgb(201, 198, 198);
+    border-color: rgb(201, 198, 198);
   }
 }
-
-
-
-
 .search-bar button {
   background-color: #060505;
   border: none;
   padding: 5px;
-  margin-left: -45px;
   cursor: pointer;
-  color: black;
+  color: white;
   font-size: 20px;
   border-radius: 5px;
+  position: absolute; /* Posición absoluta para el botón de búsqueda */
+  right: 54%;
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Centra verticalmente */
+  z-index: 1; /* Para asegurarse de que esté sobre el input */
 }
-
 .search-button i {
   color: white;
 }
-
 .logo-search-bar img {
   width: 190px;
   height: 63.796px;
 }
-
-
-/* lista desplegable*/
-
+/* lista desplegable */
 .lista-desplegable {
   background-color: #DEE1E7;
   border-radius: 10px;
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
-  width: 575px; 
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  width: 575px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-top: 15px;
   margin-left: 48px;
 }
-
 .lista-desplegable ul {
   list-style: none;
   padding: 0;
   margin: 0;
- 
 }
-
 .lista-desplegable ul li {
   padding: 8px 22px;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 }
-
 .lista-desplegable ul li:hover {
-  background-color: #928D8D; 
+  background-color: #928D8D;
 }
