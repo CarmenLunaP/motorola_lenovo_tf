@@ -132,9 +132,9 @@ function SearchResult() {
           ))}
         </div>
       </div>
-      <Link to="/comparisonTable">
+      {/* <Link to="/comparisonTable"> */}
         <button onClick={handleShowSelected}>Ver tabla comparativa</button>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 }
