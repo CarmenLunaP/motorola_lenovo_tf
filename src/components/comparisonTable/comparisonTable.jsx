@@ -1,22 +1,26 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function ComparisonTable() {
   const location = useLocation();
-  const selectedForComparison = location.state;
+  const { state } = location;
+  const { selectedForComparison, selectedModel } = location.state;
+  const navigate = useNavigate();
 
- 
-  if (!selectedForComparison || selectedForComparison.length === 0) {
+  console.log(selectedForComparison);
+  console.log(selectedModel);
+
+  if (!state || !selectedForComparison) {
     return (
       <div>
-        <p>No se han seleccionado productos para comparar.ojo</p>
+        <p>No se han seleccionado productos para comparar.</p>
       </div>
     );
   }
 
-  const handleSelect = (product) => {
-   
-    console.log("Producto seleccionado:", product);
+  const handleSelect = () => {
+    navigate("/upgrade", { state: {selectedForComparison, selectedModel} });
+    console.log(selectedForComparison);
   };
 
   return (
@@ -28,7 +32,6 @@ function ComparisonTable() {
             <th>Modelo Comercial</th>
             <th>Precio</th>
             <th>SimCards</th>
-            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -44,10 +47,28 @@ function ComparisonTable() {
           ))}
         </tbody>
       </table>
+
+      {/* Agrega una fila adicional para mostrar los detalles del modelo seleccionado */}
+      <h2>Detalles del Modelo Seleccionado</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Modelo Comercial</th>
+            <th>Precio</th>
+            <th>SimCards</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{selectedModel.modelo_comercial}</td>
+            <td>{selectedModel.Precio}</td>
+            <td>{selectedModel.SimCards}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
 
 export default ComparisonTable;
-
 
