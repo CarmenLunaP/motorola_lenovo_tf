@@ -9,7 +9,7 @@ function ComparisonTable() {
   if (!selectedForComparison || selectedForComparison.length === 0) {
     return (
       <div>
-        <p>No se han seleccionado productos para comparar.</p>
+        <p>No se han seleccionado productos para comparar.ojo</p>
       </div>
     );
   }
