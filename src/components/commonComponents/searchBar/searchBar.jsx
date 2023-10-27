@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./SearchBar.css";
 import "font-awesome/css/font-awesome.min.css";
 import logo_Motorola from "../../../assets/logo_Motorola.png";
 import { useNavigate } from "react-router-dom"; // Importa useNavigate de React Router
 import data from "../../../data.json";
 
-function SearchBar() {
+function SearchBar({ sideBarOpen }) {
+  const [sideBarWidth, setSideBarWidth] = useState(0);
+  const sideBarRef = useRef() // Asume que tengo una referencia a la barra lateral
   const [searchQuery, setSearchQuery] = useState("");
   const [results, setResults] = useState([]);
   const [selectedModel, setSelectedModel] = useState(null);
+
+  useEffect(() => {
+    if(sideBarRef.current) {
+      setSideBarWidth(sideBarRef.current.offsetWidth);
+    }
+  }, [sideBarOpen]);
 
   // accedo a la función de navegación
   const navigate = useNavigate();
@@ -17,23 +25,23 @@ function SearchBar() {
     const query = event.target.value;
     setSearchQuery(query);
     setSelectedModel(null);
-    if(query.trim()===""){
+    if (query.trim() === "") {
       setResults([]);
-    }else{
+    } else {
 
-    const matchingResults = data.models.filter((model) => {
-      const modeloComercial = model.modelo_comercial.toLowerCase();
-      const modeloTecnico = model.modelo_tecnico.toLowerCase();
-      const searchQueryLower = query.toLowerCase();
+      const matchingResults = data.models.filter((model) => {
+        const modeloComercial = model.modelo_comercial.toLowerCase();
+        const modeloTecnico = model.modelo_tecnico.toLowerCase();
+        const searchQueryLower = query.toLowerCase();
 
-      return (
-        modeloComercial.includes(searchQueryLower) ||
-        modeloTecnico.includes(searchQueryLower)
-      );
-    });
+        return (
+          modeloComercial.includes(searchQueryLower) ||
+          modeloTecnico.includes(searchQueryLower)
+        );
+      });
 
-    setResults(matchingResults);
-  }
+      setResults(matchingResults);
+    }
   };
 
   const handleModelSelection = (model) => {
@@ -44,7 +52,7 @@ function SearchBar() {
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar" style={{ width: `calc(85% - ${sideBarWidth}px)`}}>
       <div className="search-container">
         <input
           type="text"
@@ -52,6 +60,9 @@ function SearchBar() {
           value={searchQuery}
           onChange={handleSearch}
         />
+              <div className="logo-search-bar">
+                <img src={logo_Motorola} alt="Motorola Logo" />
+              </div>
         <div className="lista-desplegable">
           {results.length > 0 && (
             <div className="search-results">
@@ -78,9 +89,6 @@ function SearchBar() {
             <i className="fa fa-search"></i>
           </button>
         )}
-      </div>
-      <div className="logo-search-bar">
-        <img src={logo_Motorola} alt="Motorola Logo" />
       </div>
     </div>
   );
