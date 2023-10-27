@@ -7,6 +7,7 @@ import Home from './components/home/home.jsx';
 import SearchResult from './components/searchResult/searchResult.jsx';
 import ComparisonTable from './components/comparisonTable/comparisonTable.jsx';
 import Upgrade from './components/upgrade/upgrade.jsx';
+import Share from './components/share/share.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/searchResult" element={<SearchResult />} /> 
         <Route path="/comparisonTable" element={<ComparisonTable />} /> 
         <Route path="/upgrade" element={<Upgrade />} /> 
+        <Route path="/share" element={<Share />} /> 
       </Routes>
     </Router>
   </React.StrictMode>
