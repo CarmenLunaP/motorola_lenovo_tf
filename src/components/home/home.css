@@ -31,10 +31,12 @@
     border-radius: 10px;
     gap: 20px;
     width: 30%;
+    cursor: pointer;
 }
 
 .specs {
     margin-left: 20px;
+    margin-top: 15px;
     justify-content: flex-start
 }
 

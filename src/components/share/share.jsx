@@ -3,13 +3,13 @@ import "./share.css";
 import SearchBar from "../commonComponents/searchBar/searchBar";
 import SideBar from "../commonComponents/sideBar/sideBar";
 
-function Banner() {
+function Share() {
   return (
-    <div className="content-container">
+    <div className="share-content-container">
       <SideBar />
       <div className="compartir">
         <SearchBar />
-        <div class="share-content-container">
+        <div className="fondo">
           <div className="msj-compartir">
             <p>Compartir</p>
           </div>
@@ -20,10 +20,24 @@ function Banner() {
               nuevo Motorola G31 con notables mejoras:
             </p>
           </div>
+          <div className="mensaje-final">
+            <p>
+              <strong>Memoria RAM:</strong> De 2GB a 6GB
+              <p>Memoria ROM: De 32GB a 128GB.</p>
+              <p>Cámaras:De 2 a 3 cámaras.</p> 
+              <p>Memoria ROM: De 32GB a 128GB.</p>
+              <p>Resolución de la cámara principal: De 13MP a 64MP.</p> 
+            </p>
+          </div>
+          <div className="mensaje-final">
+            <p>
+               
+            </p>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default Banner;
+export default Share;

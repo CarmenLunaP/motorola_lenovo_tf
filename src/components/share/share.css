@@ -1,32 +1,31 @@
-.content-container {
-    background-color: violet;
-    background-color: #E9E8E8;
-    display: flex;
-    width: 100%;
+.share-content-container {
+    background-color:#F5F5F5;
+    height: 100vh;
 }
 
 .compartir {
-    /* background-color: blue; */
-    margin-left: 25%;
+    margin-left: 20%;
     flex-wrap: wrap;
 }
 
 .msj-compartir {
     display: flex;
+    font-size: 30px;
     margin-right: 50%;
-    background-color: violet;
+    background-color: none;
+    padding-top: 10%;
+
 }
 .mensaje-final{
-    margin-top: 1%;
+    padding:24px;
+    font-size: large;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    text-align: justify;
     background: #DEE1E7;
-    max-width: 99%;
-    min-height: 230px;
+    margin-left: 25%;
+    margin-top: 2px; 
+    max-width: 40%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.share-content-container{
-    padding-top: 10%;
 }
