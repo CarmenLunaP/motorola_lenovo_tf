@@ -1,10 +1,14 @@
 import React from "react";
 import "./upgradeForm.css";
+import { useNavigate } from "react-router-dom";
 
 function UpgradeForm() {
+  const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate("/share")
   };
+
 
   return (
     <form className="form">

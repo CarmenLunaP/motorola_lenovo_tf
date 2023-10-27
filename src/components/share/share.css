@@ -1,0 +1,32 @@
+.content-container {
+    background-color: violet;
+    background-color: #E9E8E8;
+    display: flex;
+    width: 100%;
+}
+
+.compartir {
+    /* background-color: blue; */
+    margin-left: 25%;
+    flex-wrap: wrap;
+}
+
+.msj-compartir {
+    display: flex;
+    margin-right: 50%;
+    background-color: violet;
+}
+.mensaje-final{
+    margin-top: 1%;
+    display: flex;
+    gap: 20px;
+    background: #DEE1E7;
+    max-width: 99%;
+    min-height: 230px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.share-content-container{
+    padding-top: 10%;
+}
