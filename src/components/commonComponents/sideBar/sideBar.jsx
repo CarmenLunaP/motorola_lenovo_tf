@@ -15,8 +15,37 @@ function SideBar() {
             <button onClick={toggleSideBar} className="toggle-button">
             <i className="fas fa-arrow-left"></i>
             </button >
-            {/* <div className={sideBarOpen ? "sideBarState active" : "sideBarState"}> */}
             <img src={sidebar_profile} alt="Photo profile" className="photo-profile" />
+            <ul className={`sidebar-menu ${sideBarOpen ? "active" : ""}`}>
+                    <li>
+                        <i className="fa fa-search"></i>
+                        <p>Principal</p>
+                    </li>
+                    <li>
+                        <i className="fa fa-search"></i>
+                        <p>Inventarios</p>
+                    </li>
+                    <li>
+                        <i className="fa fa-search"></i>
+                        <p>Nuevo registro de garantía</p>
+                    </li>
+                    <li>
+                        <i className="fa fa-search"></i>
+                        <p>Historial</p>
+                    </li>
+                    <li>
+                        <i className="fa fa-search"></i>
+                        <p>Reportes</p>
+                    </li>
+                    <li>
+                        <i className="fa fa-search"></i>
+                        <p>Ajustes de perfil</p>
+                    </li>
+                    <li className="logout">
+                        <i className="fa fa-search"></i>
+                        <p>Cerrar sesión</p>
+                    </li>
+                </ul>
         </div>
     )
 }
