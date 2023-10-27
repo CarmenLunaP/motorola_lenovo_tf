@@ -1,14 +1,17 @@
-.content-container {
-    /* background-color: violet; */
+.home-container {
     background-color: #E9E8E8;
     display: flex;
     width: 100%;
 }
 
-.compartir {
-    /* background-color: blue; */
-    margin-left: 25%;
-    flex-wrap: wrap;
+.content-container {
+    background-color: #E9E8E8;
+    margin-left: 13%;
+    padding: 20px;
+}
+
+.sidebar.active+.content-container {
+    margin-left: 23%;
 }
 
 .card-container {
@@ -26,7 +29,6 @@
     justify-content: space-between;
     background: #DEE1E7;
     border-radius: 10px;
-    /*border: 1px solid red;*/
     gap: 20px;
     width: 30%;
 }
