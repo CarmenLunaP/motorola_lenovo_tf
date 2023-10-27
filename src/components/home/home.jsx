@@ -1,14 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import SearchBar from "../commonComponents/searchBar/searchBar";
 import "./home.css";
 import SideBar from "../commonComponents/sideBar/sideBar";
 import Banner from "../banner/banner";
 import data from "../../data.json";
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate de React Router
-
-
-
-
 
 
 function printCards(data, handleNavigate) {
@@ -28,26 +24,22 @@ function printCards(data, handleNavigate) {
       <div className="image-container">
         <img src={item.img} alt={item.modelo_comercial} className="model" />
       </div>
-
-
-
     </div>
   ));
 }
 
 function Home() {
+  const [sideBarOpen, setSideBarOpen] = useState(false);
   const navigate = useNavigate();
   const handleNavigate = (model) => {
     navigate('/searchResult', { state: { selectedModel: model } });
   };
 
   return (
-    <div className="content-container">
-      <div className="side-bar">
+    <div className="home-container">
         <SideBar />
-      </div>
-      <div className="compartir">
-        <SearchBar />
+      <div className="content-container">
+        <SearchBar sideBarOpen={sideBarOpen} setSideBarOpen={setSideBarOpen} />
         <Banner />
         <div className="card-container">
           {printCards(data, handleNavigate)}
@@ -58,21 +50,3 @@ function Home() {
 }
 
 export default Home;
-
-/*
-<div>
-      <h2>{model.modelo_comercial}</h2>
-      <img src={model.img} alt={model.modelo_comercial} className="model"/>
-      <p>${model.Precio}</p>
-      <p>Año: {model.ano}</p>
-      <p>Cantidad de SIM Cards: {model.SimCards}</p>
-      <p>Memoria RAM: {model.mem_RAM_GB}</p>
-      <p>Memoria ROM: {model.mem_ROM_GB}</p>
-      <p>Cantidad de lentes: {model.lentes_camara}</p>
-      <p>Capacidad de la batería: {model.battery_capacity}</p>
-      <p>Resolución del lente principal: {model.ResolucionMax_MP}</p>
-      <p>Resolución de cámara frontal: {model.ResolucionCamaraSelfie_MP}</p>
-      <p>Cantidad de núcleos del procesador: {model.Nucleos}</p>
-      <p>Velocidad máxima del procesador: {model.Velocidad_Max_GHz}</p>
-      </div>
-*/

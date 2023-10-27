@@ -17,6 +17,9 @@ function SearchBar() {
     const query = event.target.value;
     setSearchQuery(query);
     setSelectedModel(null);
+    if(query.trim()===""){
+      setResults([]);
+    }else{
 
     const matchingResults = data.models.filter((model) => {
       const modeloComercial = model.modelo_comercial.toLowerCase();
@@ -30,7 +33,7 @@ function SearchBar() {
     });
 
     setResults(matchingResults);
-    
+  }
   };
 
   const handleModelSelection = (model) => {
