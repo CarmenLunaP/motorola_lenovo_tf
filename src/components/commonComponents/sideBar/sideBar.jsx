@@ -24,7 +24,7 @@ function SideBar() {
                 <img src={arrow_open} alt="horizontally-arrow" />
             </button >
             <img src={sidebar_profile} alt="photo profile" className="photo-profile" />
-            <ul className={`sidebar-menu ${sideBarOpen ? "active" : ""}`}>
+            <ul className={`sidebar-menu ${sideBarOpen ? "active" : ""}`} >
                 <li>
                     <img src={home} alt="horizontally-arrow" className="icon" />
                     <p>Principal</p>
