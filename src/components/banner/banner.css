@@ -1,0 +1,15 @@
+.banner-container {
+    margin-top: 10%;
+    display: flex;
+    gap: 20px;
+    background: #DEE1E7;
+    max-width: 99%;
+    min-height: 230px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner-img {
+    height: 220px;
+    transform: scaleX(-1);
+}

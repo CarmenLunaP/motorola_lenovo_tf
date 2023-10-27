@@ -1,4 +1,6 @@
-body {
+
+
+.body-login {
   background-image: url('../../assets/Login_Fondo.svg');
   padding: 0px;
   margin: 0px;
@@ -8,7 +10,7 @@ body {
   height: 100vh; 
 }
 
-.outerEdgeLogin { 
+.outer-edge-login { 
   display: flex;
   width: 446px;
   height: 646px;
@@ -24,54 +26,135 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.logoMotorolaLogin { 
+.logo-motorola-login { 
   width: 398px;
   height: 133.635px;
 }
 
-.inputLogin { 
+.input-login-id { 
   display: flex;
   width: 398px;
   height: 56px;
+  background-color: #E9E8E8;
   padding: 8px 16px;
-  align-items: center;
-  gap: 10px;
   border-radius: 16px;
-  border: 1px solid var(--Text, #111);
+  margin-bottom: 16px;
+  border: 1px solid #111;
+  color: rgba(17, 17, 17, 0.60);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+  letter-spacing: 0.035px;
 }
 
-.btnSubmitLogin { 
-  display: flex;
+.input-container-eye-password {
+  position: relative;
   width: 398px;
   height: 56px;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 16px;
-  border: 1px solid var(--Text, #111);
+  margin-bottom: 16px;
 }
 
-.btnEnterGuest { 
-  display: flex;
-  width: 398px;
-  height: 48px;
+.input-login-password {
+  width: 100%;
+  height: 100%;
+  background-color: #E9E8E8;
   padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 16px;
-  border: 1px solid var(--Text, #111);
+  border: 1px solid #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+  letter-spacing: 0.035px;
 }
 
-.btnNewUser { 
+.btn-eye {
+  position: absolute;
+  right: 0%; 
+  top: 70%;
+  width: 15%;
+  height: 80%;
+  transform: translateY(-50%); 
+  cursor: pointer;
+  border-radius: 25px;
+  border: hidden;
+  z-index: 1; 
+}
+
+.p-message-login { 
   display: flex;
+  justify-content: center;
+  color: red;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 30px; 
+  text-decoration-line: underline;
+}
+
+.p-link-login { 
+  color: #111;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+  text-decoration-line: underline;
+}
+
+.btn-submit-login { 
+  width: 398px;
+  height: 56px;
+  background-color: #002043;
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin-left: 17px;
+  border: 1px solid #111;
+  color: whitesmoke;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.separator-line {
+  width: 398px;
+  border-top: 3px solid #002043;
+  margin: 22px 0;
+}
+
+.btn-enter-guest { 
   width: 398px;
   height: 48px;
+  background-color: #111;
+  color: white;
   padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 16px;
-  border: 1px solid var(--Text, #111);
+  border: 1px solid #111;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+}
+
+.btn-new-user { 
+  width: 398px;
+  height: 48px;
+  background-color: #111;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 1px solid #111;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
 }

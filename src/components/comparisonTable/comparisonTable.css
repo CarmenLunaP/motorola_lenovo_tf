@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.body-comparisonTable {
+  padding: 0px;
+  margin: 0px;
+  height: 100%; 
+  width: 100%;
+  background-color: #E9E8E8;
+  font-family: "Montserrat";
+}
+
+.Tabla-comparativa {
+  margin-left: 270px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.searchBar-comparisonTable {
+  height: 100px;
+ margin: 0px 20px 5px 0px;
+ padding: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.table-comparisonTable {
+  margin: 40px 0px 20px 270px;
+  flex-direction: row-reverse;
+  background-color:#F4F4F4;
+  width: 83%;
+}
+
+.background-title-table-comparisonTable {
+  background-color: #DEE1E7;
+}
+
+.img-tablecomparison-box {
+  background-color: #E9E8E8;
+  border-right: 2px solid red;  
+  border-bottom: 2px solid red;  
+}
+
+.myTable {
+  border: 2px solid #D4D4D4; 
+  border-spacing:0px;
+}
+
+.myTable table {
+  border-collapse: initial; 
+  
+}
+
+.myTable th,
+.myTable td {
+  border: 1px solid #D4D4D4; 
+  border-spacing:0px;
+}
+
+.btn-select-comparisonTable {
+  width: 398px;
+  height: 48px;
+  background-color: #111;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 1px solid #111;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+}
