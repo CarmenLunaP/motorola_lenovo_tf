@@ -11,9 +11,10 @@ function SearchBar({ sideBarOpen }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [results, setResults] = useState([]);
   const [selectedModel, setSelectedModel] = useState(null);
+  const [searchTimeout, setSearchTimeout] = useState(null);
 
   useEffect(() => {
-    if(sideBarRef.current) {
+    if (sideBarRef.current) {
       setSideBarWidth(sideBarRef.current.offsetWidth);
     }
   }, [sideBarOpen]);
@@ -25,23 +26,30 @@ function SearchBar({ sideBarOpen }) {
     const query = event.target.value;
     setSearchQuery(query);
     setSelectedModel(null);
-    if (query.trim() === "") {
-      setResults([]);
-    } else {
 
-      const matchingResults = data.models.filter((model) => {
-        const modeloComercial = model.modelo_comercial.toLowerCase();
-        const modeloTecnico = model.modelo_tecnico.toLowerCase();
-        const searchQueryLower = query.toLowerCase();
-
-        return (
-          modeloComercial.includes(searchQueryLower) ||
-          modeloTecnico.includes(searchQueryLower)
-        );
-      });
-
-      setResults(matchingResults);
+    if (searchTimeout) {
+      clearTimeout(searchTimeout);
     }
+
+    setSearchTimeout(setTimeout(() => {
+      if (query.trim() === "") {
+        setResults([]);
+      } else {
+        const matchingResults = data.models.filter((model) => {
+          const modeloComercial = model.modelo_comercial.toLowerCase();
+          const modeloTecnico = model.modelo_tecnico.toLowerCase();
+          const searchQueryLower = query.toLowerCase();
+
+          return (
+            modeloComercial.includes(searchQueryLower) ||
+            modeloTecnico.includes(searchQueryLower)
+          );
+        });
+
+        setResults(matchingResults);
+      }
+    }, 300)
+    );
   };
 
   const handleModelSelection = (model) => {
@@ -50,19 +58,21 @@ function SearchBar({ sideBarOpen }) {
     setSearchQuery(model.modelo_comercial + " / " + model.modelo_tecnico);
     console.log(model);
   };
-
+  // className="search-container"
   return (
-    <div className="search-bar" style={{ width: `calc(85% - ${sideBarWidth}px)`}}>
-      <div className="search-container">
-        <input
-          type="text"
-          placeholder="Buscar por modelo, referencia o código"
-          value={searchQuery}
-          onChange={handleSearch}
-        />
-              <div className="logo-search-bar">
-                <img src={logo_Motorola} alt="Motorola Logo" />
-              </div>
+    <div className={`search-bar ${sideBarOpen ? 'open' : 'closed'}`} style={{ width: `calc(85% - ${sideBarWidth}px)` }}>
+      <div >
+        <div className="input-logo-container">
+          <input
+            type="text"
+            placeholder="Buscar por modelo, referencia o código"
+            value={searchQuery}
+            onChange={handleSearch}
+          />
+          <div className="logo-search-bar">
+            <img src={logo_Motorola} alt="Motorola Logo" />
+          </div>
+        </div>
         <div className="lista-desplegable">
           {results.length > 0 && (
             <div className="search-results">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 import "font-awesome/css/font-awesome.min.css";
 import './SideBar.css';
 import sidebar_profile from '../../../assets/sidebar_profile.png';
@@ -20,14 +21,16 @@ function SideBar() {
 
     return (
         <div className={`sidebar ${sideBarOpen ? "active" : ""}`}>
-            <button onClick={toggleSideBar} className="horizontally-arrow">
+            <button onClick={toggleSideBar} className={`horizontally-arrow ${sideBarOpen ? "closed" : ""}`}>
                 <img src={arrow_open} alt="horizontally-arrow" />
             </button >
             <img src={sidebar_profile} alt="photo profile" className="photo-profile" />
             <ul className={`sidebar-menu ${sideBarOpen ? "active" : ""}`} >
                 <li>
-                    <img src={home} alt="horizontally-arrow" className="icon" />
-                    <p>Principal</p>
+                    <Link to={"/home"} className="icon-link">
+                        <img src={home} alt="horizontally-arrow" className="icon-home" />
+                        <p>Principal</p>
+                    </Link>
                 </li>
                 <li>
                     <img src={check} alt="inventary" className="icon" />
@@ -50,8 +53,10 @@ function SideBar() {
                     <p>Ajustes de perfil</p>
                 </li>
                 <li className="logout">
-                    <img src={off} alt="logout" className="icon" />
-                    <p>Cerrar sesión</p>
+                    <Link to={"/"} className="icon-link">
+                        <img src={off} alt="logout" className="icon" />
+                        <p>Cerrar sesión</p>
+                    </Link>
                 </li>
             </ul>
         </div>
