@@ -30,15 +30,23 @@
 }
 
 .horizontally-arrow {
+  background: none;
   border: none;
   cursor: pointer;
   margin-left: 88%;  
+  display: flex;
+  border-radius: 50%; /* Asegura que el botón sea redondo en ambos estados */
+  display: flex;
+  transition: transform 0.1s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.horizontally-arrow.closed {
+  transform: rotate(180deg); /* Rotar 180 grados para que apunte al otro lado */
 }
 
 .horizontally-arrow img {
   width: 40px;
-  height: 40px;
-  background-color:#DEE1E7;
+  height: auto;
 }
 
 .sidebar-menu {
@@ -68,7 +76,6 @@
   align-items: center; 
   margin-bottom: 5px;  /* Espacio entre elementos */
   padding-bottom: 25px;
- 
 }
 
 .sidebar-menu i {
@@ -83,4 +90,17 @@
   width: 18px;
   height: 18px;
   margin-right: 15px;
+}
+
+.icon-home {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+}
+
+.icon-link {
+  text-decoration: none; /* Elimina la línea decorativa (subrayado) */
+  display: flex; /* Muestra los elementos en línea (ícono y texto) */
+  align-items: center; /* Alinea verticalmente los elementos */
+  color: #111111;
 }

@@ -14,7 +14,7 @@
   margin-left: 270px;
   font-size: 32px;
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .searchBar-comparisonTable {
@@ -27,7 +27,7 @@
 }
 
 .table-comparisonTable {
-  margin: 40px 0px 20px 270px;
+  margin: 40px 0px 30px 270px;
   flex-direction: row-reverse;
   background-color:#F4F4F4;
   width: 83%;
@@ -73,3 +73,20 @@
   font-weight: 400;
   line-height: 16px; 
 }
+
+
+
+
+/*boton volver*/
+
+.btn-volver-container{
+  margin-top: 20px;
+  margin-right: 40px;
+ 
+  display: flex;
+  flex-direction: row-reverse;
+  height: 40px;
+}
+
+
+/*---------*/

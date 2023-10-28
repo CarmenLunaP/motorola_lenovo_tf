@@ -4,12 +4,47 @@
     gap: 20px;
     background: #DEE1E7;
     max-width: 99%;
-    min-height: 230px;
+    min-height: 200px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.h1-custom {
+    font-size: 34px;
+    letter-spacing: 0.30px;
+    margin-top: 15px;
+}
+
+.p-custom {
+    font-size: 24px;
+    letter-spacing: 0.40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 .banner-img {
-    height: 220px;
+    height: 150px;
     transform: scaleX(-1);
+    padding: 15px;
+}
+
+/* .btn-tutorial {
+    background: #928D8D;
+    border: none;
+    width: 120px;
+    padding: 5px;
+} */
+
+.btn-tutorial {
+    background-color: #928D8D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido (icono y texto) */
+}
+
+.icon {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
 }

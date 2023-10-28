@@ -17,9 +17,9 @@ function printCards(data, handleNavigate) {
   return sortedData.map((item, index) => ( // tomar cada elemento para crear la tarjeta según el index
     <div key={index} onClick={() => handleNavigate(item)} className="card">
       <div className="specs">
-        <h3>{item.modelo_comercial}</h3>
-        <p>{item.modelo_tecnico}</p>
-        <p>Stock: {item.Inventario}</p>
+        <h3 className="h3-custom">{item.modelo_comercial}</h3>
+        <p className="p-mtecnico">{item.modelo_tecnico}</p>
+        <p className="p-stock">Stock: {item.Inventario}</p>
       </div>
       <div className="image-container">
         <img src={item.img} alt={item.modelo_comercial} className="model" />
@@ -37,10 +37,12 @@ function Home() {
 
   return (
     <div className="home-container">
-        <SideBar />
+        <SideBar sideBarOpen={sideBarOpen} />
       <div className="content-container">
         <SearchBar sideBarOpen={sideBarOpen} setSideBarOpen={setSideBarOpen} />
+        <div className="banner">
         <Banner />
+        </div>
         <div className="card-container">
           {printCards(data, handleNavigate)}
         </div>

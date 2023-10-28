@@ -7,11 +7,15 @@
 .content-container {
     background-color: #E9E8E8;
     margin-left: 13%;
-    padding: 20px;
+    padding: 18px;
 }
 
 .sidebar.active+.content-container {
     margin-left: 23%;
+}
+
+.banner {
+    margin-top: -25px;
 }
 
 .card-container {
@@ -20,7 +24,7 @@
     max-width: 99%;
     justify-content: space-between;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .card {
@@ -31,11 +35,27 @@
     border-radius: 10px;
     gap: 20px;
     width: 30%;
+    cursor: pointer;
 }
 
 .specs {
     margin-left: 20px;
+    margin-top: 15px;
     justify-content: flex-start
+}
+
+.h3-custom {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.p-mtecnico {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.p-stock {
+    margin-top: 45px;
 }
 
 .model {
