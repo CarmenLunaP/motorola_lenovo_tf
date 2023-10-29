@@ -2,6 +2,10 @@ import React from "react";
 import "./share.css";
 import SearchBar from "../commonComponents/searchBar/searchBar";
 import SideBar from "../commonComponents/sideBar/sideBar";
+import { Button } from "@mui/material";
+import ShareIcon from "@mui/icons-material/Share";
+import WhatsApp from "@mui/icons-material/WhatsApp";
+import MailOutlined from "@mui/icons-material/MailOutlined";
 
 function Share() {
   return (
@@ -21,18 +25,36 @@ function Share() {
             </p>
           </div>
           <div className="mensaje-final">
-            <p>
-              <strong>Memoria RAM:</strong> De 2GB a 6GB
+            <span>
+              <p>Memoria RAM: De 2GB a 6GB.</p>
               <p>Memoria ROM: De 32GB a 128GB.</p>
-              <p>Cámaras:De 2 a 3 cámaras.</p> 
+              <p>Cámaras:De 2 a 3 cámaras.</p>
               <p>Memoria ROM: De 32GB a 128GB.</p>
-              <p>Resolución de la cámara principal: De 13MP a 64MP.</p> 
-            </p>
+              <p>Resolución de la cámara principal: De 13MP a 64MP.</p>
+            </span>
           </div>
           <div className="mensaje-final">
-            <p>
-               
-            </p>
+            <Button
+              className="btn-share-comparisonTable"
+              startIcon={<ShareIcon />}
+              style={{
+                color: "#111111",
+              }}
+            >
+              Compartir
+            </Button>
+            <Button
+              startIcon={<WhatsApp />}
+              style={{
+                color: "#111111",
+              }}
+            />
+            <Button
+              startIcon={<MailOutlined />}
+              style={{
+                color: "#111111",
+              }}
+            />
           </div>
         </div>
       </div>
