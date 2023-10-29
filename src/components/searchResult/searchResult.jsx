@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import data from "../../data.json";
 import SearchBar from "../commonComponents/searchBar/searchBar";
 import "./searchResult.css";
+import SideBar from "../commonComponents/sideBar/sideBar.jsx";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 function SearchResult() {
   const [filteredModels, setFilteredModels] = useState([]);
@@ -10,6 +12,7 @@ function SearchResult() {
   const { state } = location;
   const [selectedForComparison, setSelectedForComparison] = useState([]);
   const navigate = useNavigate();
+  const [sideBarOpen, setSideBarOpen] = useState(false);
 
   if (!state || !state.selectedModel) {
     return <div>No se ha seleccionado un modelo.</div>;
@@ -61,7 +64,9 @@ function SearchResult() {
     // Manejar el cambio en la selección de productos
     if (selectedForComparison.includes(model)) {
       // Si ya está seleccionado, quitarlo de la lista
-      setSelectedForComparison(selectedForComparison.filter((item) => item !== model));
+      setSelectedForComparison(
+        selectedForComparison.filter((item) => item !== model)
+      );
     } else {
       // Si no está seleccionado, agrégalo a la lista
       setSelectedForComparison([...selectedForComparison, model]);
@@ -69,13 +74,11 @@ function SearchResult() {
   };
 
   const handleShowSelected = () => {
-    
-    navigate("/comparisonTable", { state: {selectedForComparison, selectedModel} });
-    console.log (selectedForComparison, selectedModel )
+    navigate("/comparisonTable", {
+      state: { selectedForComparison, selectedModel },
+    });
+    console.log(selectedForComparison, selectedModel);
   };
-
-  
-  
 
   // Filtrar los modelos recomendados y excluir el modelo de búsqueda
   const filteredRecommendedModels = filterModelsByROM().filter(
@@ -88,62 +91,100 @@ function SearchResult() {
 
   return (
     <div>
-      <SearchBar />
-      <div className="search-result-all">
-        <div className="model-container">
-          <div className="model-info">
-            <h1>Producto de búsqueda</h1>
-            <img src={selectedModel.img} alt={selectedModel.modelo_comercial} className="model" />
-            <p>Modelo Comercial: {selectedModel.modelo_comercial}</p>
-            <p>Modelo Técnico: {selectedModel.modelo_tecnico}</p>
-            <p>Precio: {selectedModel.Precio}</p>
-            <p>Stock: {selectedModel.Inventario}</p>
-            <p>SimCard: {selectedModel.SimCards}</p>
-            <p>RAM: {selectedModel.mem_RAM_GB}</p>
-            <p>ROM: {selectedModel.mem_ROM_GB}</p>
-            <p>Cantidad de lentes: {selectedModel.lentes_camara}</p>
-            <p>Capacidad de la batería: {selectedModel.battery_capacity}</p>
-            {/* <p>Resolución del lente principal: {selectedModel.ResolucionMax_MP}</p>
-            <p>Resolución de cámara frontal: {selectedModel.ResolucionCamaraSelfie_MP}</p>
-            <p>Cantidad de núcleos del procesador: {selectedModel.Nucleos}</p>
-            <p>Velocidad máxima del procesador: {selectedModel.Velocidad_Max_GHz}</p> */}
+      <div className="searchResult-container">
+        <SideBar />
+        <div className="content-container-searchResult">
+          <SearchBar
+            sideBarOpen={sideBarOpen}
+            setSideBarOpen={setSideBarOpen}
+          />
+  <h2 className="Tabla-comparativa">Resultado de Búsqueda</h2>
+          <div className="search-result-all">
+        
+            <div className="model-container">
+              <div className="model-info">
+                <h1 className="title-model-info">Producto de búsqueda</h1>
+                <img
+                  src={selectedModel.img}
+                  alt={selectedModel.modelo_comercial}
+                  className="model-searchResult"
+                />
+                <p className="title-card-searchResult">
+                  {selectedModel.modelo_comercial}
+                </p>
+                <p className="title-card-searchResult">
+                  {" "}
+                  {selectedModel.modelo_tecnico}
+                </p>
+                <p className="title-card-searchResult">
+                  ${selectedModel.Precio}
+                </p>
+                <div className="inf-card-searchResult">
+                  <p className="description-cards">• SimCard: {selectedModel.SimCards}</p>
+                  <p className="description-cards">• RAM: {selectedModel.mem_RAM_GB}</p>
+                  <p className="description-cards">• ROM: {selectedModel.mem_ROM_GB}</p>
+                  <p className="description-cards">• Cantidad de lentes: {selectedModel.lentes_camara}</p>
+                  <p className="description-cards"> 
+                  • Capacidad de la batería: {selectedModel.battery_capacity}
+                  </p>
+                </div>
+                <p className="description-cards-stock">Stock: {selectedModel.Inventario}</p>
+              </div>
+            </div>
+
+            <div className="recommended-models">
+              {filteredRecommendedModels.map((model, index) => (
+                <div  key={index}>
+                  <div className="model-card">
+                  <h1 className="title-model-card">Producto recomendado</h1>
+                 
+                  <img
+                    src={model.img}
+                    alt={model.modelo_comercial}
+                    className="model-searchResult"
+                  />
+                  <p className="title-card-searchResult">
+                    {model.modelo_comercial}
+                  </p>
+                  <p className="title-card-searchResult">
+                    {model.modelo_tecnico}
+                  </p>
+                  <p className="title-card-searchResult">${model.Precio}</p>
+                  <div className="inf-card-searchResult">
+                    <p className="description-cards">• SimCard: {model.SimCards}</p>
+                    <p className="description-cards">• RAM: {model.mem_RAM_GB}</p>
+                    <p className="description-cards">• ROM: {model.mem_ROM_GB}</p>
+                    <p className="description-cards">• Cantidad de lentes: {model.lentes_camara}</p>
+                    <p className="description-cards">• Capacidad de la batería: {model.battery_capacity}</p>
+                  </div>
+                  <p  className="description-cards-stock" >Stock: {model.Inventario}</p>
+                                    
+                  </div>
+                  <div className="container-check-searchResult">
+                  <input
+                   className="check-searchResult"
+                    type="checkbox"
+                    onChange={() => handleComparisonChange(model)}
+                    checked={selectedForComparison.includes(model)}
+                  />
+                  <p className="title-check">Comparar</p>
+                  </div>
+                </div>
+
+              ))}
+              
+            </div>
+          </div>
+          <div className="container-btn-searchResult">
+          {/* <Link to="/comparisonTable"> */}
+          <button className="btn-searchResult" onClick={handleShowSelected}>Ver tabla comparativa</button>
+
+          {/* </Link> */}
           </div>
         </div>
-        <div className="recommended-models">
-          {filteredRecommendedModels.map((model, index) => (
-            <div className="model-card" key={index}>
-              <h1>Producto recomendado</h1>
-              <input
-                type="checkbox"
-                onChange={() => handleComparisonChange(model)}
-                checked={selectedForComparison.includes(model)}
-              />
-              <img src={model.img} alt={model.modelo_comercial} className="model" />
-              <p>Modelo Comercial: {model.modelo_comercial}</p>
-              <p>Modelo Técnico: {model.modelo_tecnico}</p>
-              <p>Precio: {model.Precio}</p>
-              <p>Stock: {model.Inventario}</p>
-              <p>SimCard: {model.SimCards}</p>
-              <p>RAM: {model.mem_RAM_GB}</p>
-              <p>ROM: {model.mem_ROM_GB}</p>
-              <p>Cantidad de lentes: {model.lentes_camara}</p>
-              <p>Capacidad de la batería: {model.battery_capacity}</p>
-              {/* <p>Resolución del lente principal: {model.ResolucionMax_MP}</p>
-              <p>Resolución de cámara frontal: {model.ResolucionCamaraSelfie_MP}</p>
-              <p>Cantidad de núcleos del procesador: {model.Nucleos}</p>
-              <p>Velocidad máxima del procesador: {model.Velocidad_Max_GHz}</p> */}
-            </div>
-          ))}
-        </div>
       </div>
-      {/* <Link to="/comparisonTable"> */}
-        <button onClick={handleShowSelected}>Ver tabla comparativa</button>
-       
-      {/* </Link> */}
     </div>
-    
   );
 }
 
 export default SearchResult;
-

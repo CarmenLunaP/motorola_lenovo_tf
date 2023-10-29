@@ -52,7 +52,9 @@ function SearchBar({ sideBarOpen }) {
   };
 
   return (
-    <div className="search-bar" style={{ width: `calc(85% - ${sideBarWidth}px)`}}>
+    <>
+    <div className="body-searchBar">
+      <div className="search-bar" style={{ width: `calc(85% - ${sideBarWidth}px)`}}>
       <div className="search-container">
         <input
           type="text"
@@ -91,6 +93,11 @@ function SearchBar({ sideBarOpen }) {
         )}
       </div>
     </div>
+    <div className="custom-div-below-search-bar">
+  {/* Contenido de tu nuevo div */}
+</div>
+    </div>
+    </>
   );
 }
 

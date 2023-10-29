@@ -2,6 +2,7 @@
     background-color: #E9E8E8;
     display: flex;
     width: 100%;
+    
 }
 
 .content-container {
@@ -21,6 +22,7 @@
     justify-content: space-between;
     gap: 20px;
     margin-top: 50px;
+    /* overflow-y: scroll; */
 }
 
 .card {
@@ -58,4 +60,9 @@
 .welcome {
     background-color: #928D8D;
     height: 80px;
+}
+
+.title-stock{
+    margin-top: 20px;
+    font-weight: bold;
 }

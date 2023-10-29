@@ -41,6 +41,7 @@ function Home() {
       <div className="content-container">
         <SearchBar sideBarOpen={sideBarOpen} setSideBarOpen={setSideBarOpen} />
         <Banner />
+        <h1 className="title-stock">Inventario</h1>
         <div className="card-container">
           {printCards(data, handleNavigate)}
         </div>
