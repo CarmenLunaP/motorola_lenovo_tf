@@ -69,7 +69,7 @@ function ComparisonTable() {
                     <img
                       src={selectedModel.img}
                       alt={selectedModel.modelo_comercial}
-                      className="model"
+                      className="img-tablecomparison-box"
                     />
                   </TableCell>
                   {selectedForComparison.map((product, index) => (
@@ -81,7 +81,7 @@ function ComparisonTable() {
                       <img
                         src={product.img}
                         alt={product.modelo_comercial}
-                        className="model"
+                        className="img-tablecomparison-box"
                       />
                     </TableCell>
                   ))}

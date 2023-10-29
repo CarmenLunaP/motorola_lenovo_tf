@@ -90,3 +90,9 @@
 
 
 /*---------*/
+
+.img-tablecomparison-box{
+  height: 150px;
+  margin: 15px;
+  border: hidden;
+}
