@@ -42,7 +42,7 @@ function Upgrate() {
           <div className="upgrade-header">
             <h2 className="upgrade-Tabla-comparativa">Registrar Upgrade</h2>
             <div className="btn-volver-container">
-              <Link to="/searchResult.jsx">
+              <Link to="/home">
                 <div className="volver-content">
                   <span>
                     {" "}

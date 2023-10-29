@@ -21,7 +21,7 @@ function Share() {
           <div className="msj-compartir">
             <p>Compartir</p>
             <div className="btn-volver-container">
-              <Link to="/searchResult.jsx">
+              <Link to="/home">
                 <div className="share-volver-content">
                   <span>
                     {" "}
