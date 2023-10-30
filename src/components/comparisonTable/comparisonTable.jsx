@@ -8,7 +8,6 @@ import {
   Button,
   Typography,
 } from "@mui/material";
-import "./ComparisonTable.css";
 import SearchBar from "../commonComponents/searchBar/searchBar.jsx";
 import "./comparisonTable.css";
 import SideBar from "../commonComponents/sideBar/sideBar.jsx";
