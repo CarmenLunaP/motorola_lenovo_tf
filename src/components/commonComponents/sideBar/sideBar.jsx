@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "font-awesome/css/font-awesome.min.css";
-import './SideBar.css';
+import './sideBar.css';
 import sidebar_profile from '../../../assets/sidebar_profile.png';
 import arrow_open from "../../../assets/arrow_open.png";
 import check from "../../../assets/check.png";
