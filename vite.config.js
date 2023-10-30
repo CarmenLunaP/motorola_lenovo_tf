@@ -1,15 +1,13 @@
 import { defineConfig } from 'vite';
 
-
-
 export default defineConfig(({ command }) => {
   if (command === 'build') {
     return {
       root: 'src',
-   
       build: {
         minify: false,
         rollupOptions: {
+          input: 'main.jsx', 
           output: {
             dir: './dist',
           },
@@ -19,6 +17,7 @@ export default defineConfig(({ command }) => {
   }
   return {};
 });
+
 
 // export default {
 //   server: {
