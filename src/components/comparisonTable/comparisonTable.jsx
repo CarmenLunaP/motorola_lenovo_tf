@@ -48,12 +48,15 @@ function ComparisonTable() {
         <SearchBar />
       </div>
       <div className="btn-volver-container">
-        <Link to="/searchResult.jsx">
-          <div className="volver-content">
-            <span> <ArrowBackIosIcon /> Volver </span>
-          </div>
-        </Link>
-      </div>
+              <Link to="/home">
+                <div className="share-volver-content">
+                  <span>
+                    {" "}
+                    <ArrowBackIosIcon /> Volver{" "}
+                  </span>
+                </div>
+              </Link>
+            </div>
       <h2 className="Tabla-comparativa">Tabla Comparativa</h2>
       <div className="container-restarShareSave-comparisonTable">
         <div className="table-comparisonTable">

@@ -18,12 +18,13 @@
 }
 
 .searchBar-comparisonTable {
-  height: 100px;
- margin: 0px 20px 5px 0px;
+ height: 100px;
+ margin: 0px 20px 5px 250px;
  padding: 0px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+ display: flex;
+ 
+
+
 }
 
 .table-comparisonTable {
