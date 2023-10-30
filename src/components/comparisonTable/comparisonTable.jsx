@@ -2,7 +2,6 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
   Table,
-  TableHead,
   TableRow,
   TableCell,
   TableBody,
