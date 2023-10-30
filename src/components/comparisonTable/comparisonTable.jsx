@@ -9,8 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import SearchBar from "../commonComponents/searchBar/searchBar.jsx";
-import "./ComparisonTable.css";
-
+import "./comparisonTable.jsx";
 import SideBar from "../commonComponents/sideBar/sideBar.jsx";
 import MyCustomButton from "./myCustomButton.jsx";
 import { Link } from "react-router-dom";
