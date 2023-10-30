@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "font-awesome/css/font-awesome.min.css";
 import './sideBar.css';

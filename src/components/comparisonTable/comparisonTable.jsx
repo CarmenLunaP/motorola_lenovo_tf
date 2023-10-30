@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
@@ -9,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import SearchBar from "../commonComponents/searchBar/searchBar.jsx";
-import "./comparisonTable.jsx";
+import "./comparisonTable.css";
 import SideBar from "../commonComponents/sideBar/sideBar.jsx";
 import MyCustomButton from "./myCustomButton.jsx";
 import { Link } from "react-router-dom";

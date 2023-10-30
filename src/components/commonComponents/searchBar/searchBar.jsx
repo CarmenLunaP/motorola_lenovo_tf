@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useRef } from "react";
 import "./searchBar.css";
 import "font-awesome/css/font-awesome.min.css";
