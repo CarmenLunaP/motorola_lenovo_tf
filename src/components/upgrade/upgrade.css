@@ -1,4 +1,34 @@
-.upgrade-container {
-    padding-top: 100px;
-    display: flex;
+.upgrade-content-container {
+  background-color: #e9e8e8;
+  margin-left: 13%;
+  padding: 20px;
+  height: 100vh;
 }
+
+.upgrade-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.model-card {
+    background-color: #DEE1E7;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  .upgrade-btns{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .upgrade-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .upgrade-cards {
+    display: flex;
+  }
