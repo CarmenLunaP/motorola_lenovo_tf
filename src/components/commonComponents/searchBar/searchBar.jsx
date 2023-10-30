@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./SearchBar.css";
+import "./searchBar.css";
 import "font-awesome/css/font-awesome.min.css";
 import logo_Motorola from "../../../assets/logo_Motorola.png";
 import { useNavigate } from "react-router-dom"; // Importa useNavigate de React Router
